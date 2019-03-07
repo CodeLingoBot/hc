@@ -82,7 +82,7 @@ func (ctx *context) Delete(key interface{}) {
 	delete(ctx.storage, key)
 }
 
-// HAP Context
+// SetSessionForConnection: HAP Context
 func (ctx *context) SetSessionForConnection(s Session, c net.Conn) {
 	key := ctx.GetKey(c)
 	ctx.Set(key, s)
@@ -106,7 +106,7 @@ func (ctx *context) DeleteSessionForConnection(c net.Conn) {
 	ctx.Delete(key)
 }
 
-// Returns a list of active connections
+// ActiveConnections returns a list of active connections
 func (ctx *context) ActiveConnections() []net.Conn {
 	var connections []net.Conn
 	ctx.mutex.Lock()

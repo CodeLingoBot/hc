@@ -39,12 +39,12 @@ func (d *device) Name() string {
 	return d.entity.Name
 }
 
-// PairPrivateKey returns the client private key used for pairing
+// PrivateKey returns the client private key used for pairing
 func (d *device) PrivateKey() []byte {
 	return d.entity.PrivateKey
 }
 
-// PairPublicKey returns the client public key used for pairing
+// PublicKey returns the client public key used for pairing
 func (d *device) PublicKey() []byte {
 	return d.entity.PublicKey
 }

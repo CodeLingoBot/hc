@@ -266,7 +266,7 @@ func (t *ipTransport) notifyListener(a *accessory.Accessory, c *characteristic.C
 	}
 }
 
-// Handles event which are sent when pairing with a device is added or removed
+// Handle handles event which are sent when pairing with a device is added or removed
 func (t *ipTransport) Handle(ev interface{}) {
 	switch ev.(type) {
 	case event.DevicePaired:

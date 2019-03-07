@@ -50,7 +50,7 @@ type Service struct {
 	Optional []*Characteristic
 }
 
-// FileName returns the filename for a characteristic
+// ServiceFileName returns the filename for a characteristic
 func ServiceFileName(svc *gen.ServiceMetadata) string {
 	return fmt.Sprintf("%s.go", underscored(svc.Name))
 }

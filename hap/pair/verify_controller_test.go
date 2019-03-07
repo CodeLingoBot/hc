@@ -7,7 +7,7 @@ import (
 	"testing"
 )
 
-// Tests the pairing key verification
+// TestInvalidPublicKey tests the pairing key verification
 func TestInvalidPublicKey(t *testing.T) {
 	storage, err := util.NewTempFileStorage()
 
@@ -43,7 +43,7 @@ func TestInvalidPublicKey(t *testing.T) {
 	}
 }
 
-// Tests the pairing key verification
+// TestPairVerifyIntegration tests the pairing key verification
 func TestPairVerifyIntegration(t *testing.T) {
 	storage, err := util.NewTempFileStorage()
 

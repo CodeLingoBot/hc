@@ -11,7 +11,7 @@ const CategoriesTemplate = `| Accessory | Category |
 | --- | --- |{{range .Categories}}
 | {{.Name}} | {{ .Category}} | {{end}}`
 
-// CategoriesGoCode returns the go code for a categories file
+// CategoriesCode returns the go code for a categories file
 func CategoriesCode(m *gen.Metadata) ([]byte, error) {
 	var err error
 	var buf bytes.Buffer

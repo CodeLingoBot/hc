@@ -7,7 +7,7 @@ import (
 	"testing"
 )
 
-// Tests the pairing setup
+// TestPairingIntegration tests the pairing setup
 func TestPairingIntegration(t *testing.T) {
 	storage, err := util.NewTempFileStorage()
 

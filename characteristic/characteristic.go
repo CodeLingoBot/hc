@@ -117,7 +117,7 @@ func (c *Characteristic) Equal(other interface{}) bool {
 	return false
 }
 
-// model.Characteristic
+// SetID: model.Characteristic
 func (c *Characteristic) SetID(id int64) {
 	c.ID = id
 }

@@ -145,7 +145,7 @@ func (v ByValue) Swap(i, j int) {
 	v[i], v[j] = v[j], v[i]
 }
 
-// FileName returns the filename for a characteristic
+// CharacteristicFileName returns the filename for a characteristic
 func CharacteristicFileName(char *gen.CharacteristicMetadata) string {
 	return fmt.Sprintf("%s.go", underscored(char.Name))
 }

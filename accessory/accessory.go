@@ -97,7 +97,7 @@ func (a *Accessory) Identify() {
 	}
 }
 
-// Adds a service to the accessory and updates the ids of the service and the corresponding characteristics
+// AddService adds a service to the accessory and updates the ids of the service and the corresponding characteristics
 func (a *Accessory) AddService(s *service.Service) {
 	s.SetID(a.idCount)
 	a.idCount++
